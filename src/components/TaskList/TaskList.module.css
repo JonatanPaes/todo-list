@@ -1,0 +1,132 @@
+.taskList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.taskForm {
+  width: 100%;
+  max-width: 46rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  height: 3.75rem;
+  margin-top: calc(0px - 1.5rem - 6px);
+}
+
+.taskForm input {
+  flex: 1;
+  color: var(--gray-100);
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  
+}
+
+.taskForm input::placeholder {
+  color: var(--gray-300);
+}
+
+.taskForm input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple-dark) ;
+}
+
+.taskForm button {
+  height: 100%;
+  padding: 0 1rem;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.taskForm button:hover {
+  background: var(--blue);
+}
+
+.taskForm button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.tasks {
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header p {
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.header p.completed {
+  color: var(--purple);
+}
+
+.header span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.listEmpty {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.empty {
+  margin-top: 4rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--gray-300);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.empty p {
+  font-weight: 700;
+}

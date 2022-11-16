@@ -1,0 +1,71 @@
+.task {
+  width: 100%;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  height: 4.5rem;
+}
+
+.task input {
+  min-width: 1.063rem;
+  min-height: 1.063rem;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.task input:checked {
+  width: 1.063rem;
+  height: 1.063rem;
+  accent-color: var(--purple-dark);
+  background: var(--purple-dark);
+  border: 2px solid transparent;
+}
+
+.task input:checked::before {
+  font-size: 0.563rem;
+  content: "\2714";
+  display: flex;
+  justify-content: center;
+  color: var(--gray-100);
+}
+
+.task input:checked:hover {
+  background: var(--purple);
+}
+
+.task p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--gray-100);
+  margin-right: auto;
+}
+
+p.textCompleted {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.task button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  border-radius: 4px;
+  transition: color 0.1s;
+  line-height: 0;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.task button:hover {
+  color: var(--danger);
+  background: var(--gray-400);
+}
